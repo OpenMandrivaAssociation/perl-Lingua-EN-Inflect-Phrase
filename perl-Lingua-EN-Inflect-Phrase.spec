@@ -12,6 +12,8 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::NoWarnings)
+BuildRequires: perl(Lingua::EN::FindNumber)
 BuildRequires:	perl(Exporter)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Lingua::EN::Inflect)
