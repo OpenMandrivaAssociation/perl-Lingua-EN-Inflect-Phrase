@@ -1,9 +1,9 @@
 %define upstream_name    Lingua-EN-Inflect-Phrase
-%define upstream_version 0.04
+%define upstream_version 0.18
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Inflect short English Phrases
 License:	GPL+ or Artistic
@@ -43,16 +43,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml README Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 0.40.0-2mdv2011.0
-+ Revision: 655041
-- rebuild for updated spec-helper
-
-* Thu Apr 08 2010 Jérôme Quelin <jquelin@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 533029
-- import perl-Lingua-EN-Inflect-Phrase
-
-
-* Thu Apr 08 2010 cpan2dist 0.04-1mdv
-- initial mdv release, generated with cpan2dist
